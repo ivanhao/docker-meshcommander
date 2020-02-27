@@ -10,9 +10,9 @@ docker build -t meshcommander:latest .
 run container:
 
 ```
-docker run -d --name meshcommander -p 8080:80 meshcommander
+docker run -d --name meshcommander --network=host meshcommander
 ```
-open http://ip:8080 can show interfaces.
+open http://ip:16992 can show interfaces.
 
 用法：
 build镜像：
@@ -22,7 +22,7 @@ docker build -t meshcommander:latest .
 ```
 运行:
 ```
-docker run -d --name meshcommander -p 8080:80 meshcommander
+docker run -d --name meshcommander --network=host meshcommander
 ```
 
-打开http://ip:8080 可以显示界面。
+打开http://ip:16992 可以显示界面。
