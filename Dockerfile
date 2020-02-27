@@ -9,6 +9,7 @@ RUN echo "http://mirrors.aliyun.com/alpine/latest-stable/main/" > /etc/apk/repos
 && apk add  nodejs npm && \
         mkdir /meshcommander && \
         cd /meshcommander && \
+        npm config set proxy null && \
         npm install meshcommander 
 
 EXPOSE 80
