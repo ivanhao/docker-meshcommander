@@ -10,7 +10,8 @@ RUN echo "http://mirrors.aliyun.com/alpine/latest-stable/main/" > /etc/apk/repos
         mkdir /meshcommander && \
         cd /meshcommander && \
         npm config set proxy null && \
-        npm install meshcommander 
+        npm install meshcommander && \
+        chmod +x /entrypoint.sh
 
 EXPOSE 80
 ENTRYPOINT ["/entrypoint.sh"]
