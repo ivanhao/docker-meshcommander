@@ -16,5 +16,5 @@ RUN echo "http://mirrors.aliyun.com/alpine/latest-stable/main/" > /etc/apk/repos
         npm install meshcommander && \
         chmod +x /entrypoint.sh
 
-EXPOSE 80
+EXPOSE 16992
 ENTRYPOINT ["/entrypoint.sh"]
