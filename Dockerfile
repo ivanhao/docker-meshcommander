@@ -1,6 +1,6 @@
 #Author: ivanhao
 #github: https://github.com/ivanhao/docker-meshcommander
-FROM alpine:3.10.4
+FROM multiarch/alpine:armv7-v3.10
 MAINTAINER ivanhao "ivanhao1984@qq.com"
 
 WORKDIR /
