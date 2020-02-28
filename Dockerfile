@@ -1,7 +1,7 @@
 #Author: ivanhao
 #github: https://github.com/ivanhao/docker-meshcommander
 FROM alpine:3.10.4
-LABEL maintainer "ivanhao1984@qq.com"
+MAINTAINER ivanhao "ivanhao1984@qq.com"
 
 WORKDIR /
 ADD entrypoint.sh /entrypoint.sh
