@@ -10,7 +10,7 @@ docker build -t meshcommander:latest .
 run container:
 
 ```
-docker run -d --name meshcommander --network=host meshcommander
+docker run -d --name meshcommander --network=host --restart=always meshcommander
 ```
 open http://ip:16992 can show interfaces.
 
@@ -22,7 +22,7 @@ docker build -t meshcommander:latest .
 ```
 运行:
 ```
-docker run -d --name meshcommander --network=host meshcommander
+docker run -d --name meshcommander --network=host --restart=always meshcommander
 ```
 
 打开http://ip:16992 可以显示界面。
